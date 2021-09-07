@@ -1,11 +1,10 @@
-package br.com.matheuspadilha.hruser.entities;
+package br.com.matheuspadilha.hroauth.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -13,14 +12,10 @@ import java.util.Objects;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table(name = "tb_role")
 public class Role implements Serializable {
     
     private static final long serialVersionUID = 5922652069286114909L;
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String roleName;
     
