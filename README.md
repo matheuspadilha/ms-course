@@ -1,1 +1,1 @@
-# microservice-course
+# ms-course
