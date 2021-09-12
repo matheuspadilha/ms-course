@@ -33,6 +33,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
             "/hr-payroll/**",
             "/hr-user/**",
             "/actuator/**",
+            "/hr-oauth/users/**",
             "/hr-worker/actuator/**",
             "/hr-oauth/actuator/**"
     };
