@@ -7,6 +7,8 @@
 
 ## ...under construction 🚧
 
+## Passos para realizar o Build dos projetos e subir no docker
+
 ## Criar rede docker para sistema hr
 ```
 docker network create hr-net
