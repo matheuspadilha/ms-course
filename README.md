@@ -4,6 +4,12 @@
 
 --- 
 
+## Tecnologias
+✔️ Java 11
+✔️ Maven
+✔️ SpringBoot
+✔️ Docker
+
 
 ## ...under construction 🚧
 
