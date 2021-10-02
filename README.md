@@ -1,4 +1,4 @@
-# Projeto desenvolvido durante o curso Microsserviços Java com Spring Boot e Spring Cloud do professor [Nélio Alves](https://github.com/acenelio)
+# Projeto desenvolvido durante o curso de Microsserviços Java com Spring Boot e Spring Cloud do professor [Nélio Alves](https://github.com/acenelio)
 
 ## Tecnologias
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
