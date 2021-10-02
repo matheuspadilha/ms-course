@@ -1,9 +1,5 @@
 # Projeto desenvolvido durante o curso Microsserviços Java com Spring Boot e Spring Cloud do professor [Nélio Alves](https://github.com/acenelio)
 
-<!-- image -->
-
---- 
-
 ## Tecnologias
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
@@ -11,7 +7,18 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 
-## ...under construction 🚧
+## Conteúdo abordado
+- Feign para requisições de API entre microsserviços  
+- Ribbon para balanceamento de carga  
+- Servidor Eureka para registro dos microsserviços  
+- API Gateway Zuul para roteamento e autorização  
+- Hystrix para tolerância a falhas  
+- OAuth e JWT para autenticação e autorização  
+- Servidor de configuração centralizada com dados em repositório Git  
+- Geração de containers Docker para os microsserviços e bases de dados  
+
+## Projeto vinculado, que contém algumas configurações
+[https://github.com/matheuspadilha/ms-course-configs](https://github.com/matheuspadilha/ms-course-configs)
 
 ## Passos para realizar o Build dos projetos e subir no docker
 
