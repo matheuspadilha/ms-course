@@ -29,7 +29,7 @@ docker network create hr-net
 
 ## Testando perfil dev com Postgresql no Docker
 ```
-**docker pull postgres:12-alpine
+docker pull postgres:12-alpine
 
 docker run -p 5432:5432 --name hr-worker-pg12 --network hr-net -e POSTGRES_PASSWORD=1234567 -e POSTGRES_DB=db_hr_worker postgres:12-alpine
 
@@ -37,13 +37,16 @@ docker run -p 5432:5432 --name hr-user-pg12 --network hr-net -e POSTGRES_PASSWOR
 ```
 
 ## hr-config-server
+Dockerfile
 ```
 FROM openjdk:11
 VOLUME /tmp
 EXPOSE 8888
 ADD ./target/hr-config-server-0.0.1-SNAPSHOT.jar hr-config-server.jar
 ENTRYPOINT ["java","-jar","/hr-config-server.jar"]
-``` 
+```
+
+No Terminal
 ```
 mvnw clean package
 
@@ -53,6 +56,7 @@ docker run -p 8888:8888 --name hr-config-server --network hr-net -e GITHUB_USER=
 ```
 
 ## hr-eureka-server
+Dockerfile
 ```
 FROM openjdk:11
 VOLUME /tmp
@@ -60,6 +64,8 @@ EXPOSE 8761
 ADD ./target/hr-eureka-server-0.0.1-SNAPSHOT.jar hr-eureka-server.jar
 ENTRYPOINT ["java","-jar","/hr-eureka-server.jar"]
 ``` 
+
+No Terminal
 ```
 mvnw clean package
 
@@ -69,12 +75,14 @@ docker run -p 8761:8761 --name hr-eureka-server --network hr-net hr-eureka-serve
 ```
 
 ## hr-worker
+Dockerfile
 ```
 FROM openjdk:11
 VOLUME /tmp
 ADD ./target/hr-worker-0.0.1-SNAPSHOT.jar hr-worker.jar
 ENTRYPOINT ["java","-jar","/hr-worker.jar"]
-``` 
+```
+No Terminal
 ```
 mvnw clean package -DskipTests
 
@@ -84,12 +92,14 @@ docker run -P --network hr-net hr-worker:v1
 ```
 
 ## hr-user
+Dockerfile
 ```
 FROM openjdk:11
 VOLUME /tmp
 ADD ./target/hr-user-0.0.1-SNAPSHOT.jar hr-user.jar
 ENTRYPOINT ["java","-jar","/hr-user.jar"]
 ``` 
+No Terminal
 ```
 mvnw clean package -DskipTests
 
@@ -99,12 +109,14 @@ docker run -P --network hr-net hr-user:v1
 ```
 
 ## hr-payroll
+Dockerfile
 ```
 FROM openjdk:11
 VOLUME /tmp
 ADD ./target/hr-payroll-0.0.1-SNAPSHOT.jar hr-payroll.jar
 ENTRYPOINT ["java","-jar","/hr-payroll.jar"]
-``` 
+```
+No Terminal
 ```
 mvnw clean package -DskipTests
 
@@ -114,12 +126,14 @@ docker run -P --network hr-net hr-payroll:v1
 ```
 
 ## hr-oauth
+Dockerfile
 ```
 FROM openjdk:11
 VOLUME /tmp
 ADD ./target/hr-oauth-0.0.1-SNAPSHOT.jar hr-oauth.jar
 ENTRYPOINT ["java","-jar","/hr-oauth.jar"]
 ``` 
+No Terminal
 ```
 mvnw clean package -DskipTests
 
@@ -129,6 +143,7 @@ docker run -P --network hr-net hr-oauth:v1
 ```
 
 ## hr-api-gateway-zuul
+Dockerfile
 ```
 FROM openjdk:11
 VOLUME /tmp
@@ -136,6 +151,7 @@ EXPOSE 8765
 ADD ./target/hr-api-gateway-zuul-0.0.1-SNAPSHOT.jar hr-api-gateway-zuul.jar
 ENTRYPOINT ["java","-jar","/hr-api-gateway-zuul.jar"]
 ``` 
+No Terminal
 ```
 mvnw clean package -DskipTests
 
