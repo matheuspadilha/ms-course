@@ -46,7 +46,7 @@ ADD ./target/hr-config-server-0.0.1-SNAPSHOT.jar hr-config-server.jar
 ENTRYPOINT ["java","-jar","/hr-config-server.jar"]
 ```
 
-No Terminal
+No terminal
 ```
 mvnw clean package
 
@@ -65,7 +65,7 @@ ADD ./target/hr-eureka-server-0.0.1-SNAPSHOT.jar hr-eureka-server.jar
 ENTRYPOINT ["java","-jar","/hr-eureka-server.jar"]
 ``` 
 
-No Terminal
+No terminal
 ```
 mvnw clean package
 
@@ -82,7 +82,7 @@ VOLUME /tmp
 ADD ./target/hr-worker-0.0.1-SNAPSHOT.jar hr-worker.jar
 ENTRYPOINT ["java","-jar","/hr-worker.jar"]
 ```
-No Terminal
+No terminal
 ```
 mvnw clean package -DskipTests
 
@@ -99,7 +99,7 @@ VOLUME /tmp
 ADD ./target/hr-user-0.0.1-SNAPSHOT.jar hr-user.jar
 ENTRYPOINT ["java","-jar","/hr-user.jar"]
 ``` 
-No Terminal
+No terminal
 ```
 mvnw clean package -DskipTests
 
@@ -116,7 +116,7 @@ VOLUME /tmp
 ADD ./target/hr-payroll-0.0.1-SNAPSHOT.jar hr-payroll.jar
 ENTRYPOINT ["java","-jar","/hr-payroll.jar"]
 ```
-No Terminal
+No terminal
 ```
 mvnw clean package -DskipTests
 
@@ -133,7 +133,7 @@ VOLUME /tmp
 ADD ./target/hr-oauth-0.0.1-SNAPSHOT.jar hr-oauth.jar
 ENTRYPOINT ["java","-jar","/hr-oauth.jar"]
 ``` 
-No Terminal
+No terminal
 ```
 mvnw clean package -DskipTests
 
@@ -151,7 +151,7 @@ EXPOSE 8765
 ADD ./target/hr-api-gateway-zuul-0.0.1-SNAPSHOT.jar hr-api-gateway-zuul.jar
 ENTRYPOINT ["java","-jar","/hr-api-gateway-zuul.jar"]
 ``` 
-No Terminal
+No terminal
 ```
 mvnw clean package -DskipTests
 
