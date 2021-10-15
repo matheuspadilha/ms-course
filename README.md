@@ -17,7 +17,7 @@
 - Servidor de configuração centralizada com dados em repositório Git  
 - Geração de containers Docker para os microsserviços e bases de dados  
 
-## Projeto vinculado, que contém algumas configurações
+## Projeto vinculado, que contém algumas configurações dos microserviços
 [https://github.com/matheuspadilha/ms-course-configs](https://github.com/matheuspadilha/ms-course-configs)
 
 ## Passos para realizar o Build dos projetos e subir no docker
